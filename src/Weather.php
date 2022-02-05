@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the jiuxiaoer/weather.
+ *
+ * (c) jiuxiao<yinshen@79xj.cn>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Jiuxiaoer\Weather;
 
 use GuzzleHttp\Client;
@@ -14,17 +23,21 @@ class Weather
     /**
      * @param $key
      */
-    public function __construct($key) {
+    public function __construct($key)
+    {
         $this->key = $key;
     }
 
-    public function getHttpClient() {
+    public function getHttpClient()
+    {
         return new Client($this->guzzleOptions);
     }
 
-    public function setGuzzleOptions(array $options) {
+    public function setGuzzleOptions(array $options)
+    {
         $this->guzzleOptions = $options;
     }
+
     public function getLiveWeather($city, $format = 'json')
     {
         return $this->getWeather($city, 'base', $format);
@@ -34,6 +47,7 @@ class Weather
     {
         return $this->getWeather($city, 'all', $format);
     }
+
     /**
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @throws HttpException
@@ -55,7 +69,7 @@ class Weather
             'key' => $this->key,
             'city' => $city,
             'output' => \strtolower($format),
-            'extensions' =>  \strtolower($type),
+            'extensions' => \strtolower($type),
         ]);
 
         try {
