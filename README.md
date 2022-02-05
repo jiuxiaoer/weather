@@ -3,6 +3,8 @@
 ---
 
 # Weather
+[![Build Status](https://app.travis-ci.com/jiuxiaoer/weather.svg?branch=master)](https://app.travis-ci.com/jiuxiaoer/weather)
+[![StyleCI build status](https://github.styleci.io/repos/455535806/shield)](https://github.styleci.io/repos/455535806/shield)
 
 基于  [高德开放平台](https://lbs.amap.com/dev/id/newuser) 的 PHP 天气信息组件。
 
