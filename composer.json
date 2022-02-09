@@ -26,5 +26,8 @@
                 "Jiuxiaoer\\Weather\\ServiceProvider"
             ]
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
     }
 }
