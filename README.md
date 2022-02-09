@@ -3,7 +3,7 @@
 ---
 
 # Weather
-[![Build Status](https://app.travis-ci.com/jiuxiaoer/weather.svg?branch=master)](https://app.travis-ci.com/jiuxiaoer/weather)
+[![Build Status](https://github.com/jiuxiaoer/weather/actions/workflows/test.yml/badge.svg)](https://github.com/jiuxiaoer/weather/actions)
 [![StyleCI build status](https://github.styleci.io/repos/455535806/shield)](https://github.styleci.io/repos/455535806/shield)
 
 基于  [高德开放平台](https://lbs.amap.com/dev/id/newuser) 的 PHP 天气信息组件。
@@ -70,63 +70,63 @@ $response = $weather->getForecastsWeather('深圳');
 
 ```json
 {
-    "status": "1", 
-    "count": "1", 
-    "info": "OK", 
-    "infocode": "10000", 
+    "status": "1",
+    "count": "1",
+    "info": "OK",
+    "infocode": "10000",
     "forecasts": [
         {
-            "city": "深圳市", 
-            "adcode": "440300", 
-            "province": "广东", 
-            "reporttime": "2018-08-21 11:00:00", 
+            "city": "深圳市",
+            "adcode": "440300",
+            "province": "广东",
+            "reporttime": "2018-08-21 11:00:00",
             "casts": [
                 {
-                    "date": "2018-08-21", 
-                    "week": "2", 
-                    "dayweather": "雷阵雨", 
-                    "nightweather": "雷阵雨", 
-                    "daytemp": "31", 
-                    "nighttemp": "26", 
-                    "daywind": "无风向", 
-                    "nightwind": "无风向", 
-                    "daypower": "≤3", 
+                    "date": "2018-08-21",
+                    "week": "2",
+                    "dayweather": "雷阵雨",
+                    "nightweather": "雷阵雨",
+                    "daytemp": "31",
+                    "nighttemp": "26",
+                    "daywind": "无风向",
+                    "nightwind": "无风向",
+                    "daypower": "≤3",
                     "nightpower": "≤3"
-                }, 
+                },
                 {
-                    "date": "2018-08-22", 
-                    "week": "3", 
-                    "dayweather": "雷阵雨", 
-                    "nightweather": "雷阵雨", 
-                    "daytemp": "32", 
-                    "nighttemp": "27", 
-                    "daywind": "无风向", 
-                    "nightwind": "无风向", 
-                    "daypower": "≤3", 
+                    "date": "2018-08-22",
+                    "week": "3",
+                    "dayweather": "雷阵雨",
+                    "nightweather": "雷阵雨",
+                    "daytemp": "32",
+                    "nighttemp": "27",
+                    "daywind": "无风向",
+                    "nightwind": "无风向",
+                    "daypower": "≤3",
                     "nightpower": "≤3"
-                }, 
+                },
                 {
-                    "date": "2018-08-23", 
-                    "week": "4", 
-                    "dayweather": "雷阵雨", 
-                    "nightweather": "雷阵雨", 
-                    "daytemp": "32", 
-                    "nighttemp": "26", 
-                    "daywind": "无风向", 
-                    "nightwind": "无风向", 
-                    "daypower": "≤3", 
+                    "date": "2018-08-23",
+                    "week": "4",
+                    "dayweather": "雷阵雨",
+                    "nightweather": "雷阵雨",
+                    "daytemp": "32",
+                    "nighttemp": "26",
+                    "daywind": "无风向",
+                    "nightwind": "无风向",
+                    "daypower": "≤3",
                     "nightpower": "≤3"
-                }, 
+                },
                 {
-                    "date": "2018-08-24", 
-                    "week": "5", 
-                    "dayweather": "雷阵雨", 
-                    "nightweather": "雷阵雨", 
-                    "daytemp": "31", 
-                    "nighttemp": "26", 
-                    "daywind": "无风向", 
-                    "nightwind": "无风向", 
-                    "daypower": "≤3", 
+                    "date": "2018-08-24",
+                    "week": "5",
+                    "dayweather": "雷阵雨",
+                    "nightweather": "雷阵雨",
+                    "daytemp": "31",
+                    "nighttemp": "26",
+                    "daywind": "无风向",
+                    "nightwind": "无风向",
+                    "daypower": "≤3",
                     "nightpower": "≤3"
                 }
             ]
