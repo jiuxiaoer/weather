@@ -10,7 +10,7 @@ jobs:
 
         strategy:
             matrix:
-                php-version: ['7.2', '7.3', '7.4', '8.0']
+                php-version: ['7.3', '7.4', '8.0']
 
         steps:
             - name: Setup PHP ${{ matrix.php-version }}
@@ -25,7 +25,7 @@ jobs:
               run: composer validate
 
             - name: Install dependencies
-              run: composer install --prefer-dist --no-progress --no-suggest
+              run: composer install
 
             - name: Run test suite
               run: composer run-script test
